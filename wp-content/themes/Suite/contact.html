@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Resume Design Suite</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#slider").easySlider({
+			auto: true, 
+			continuous: true,
+			numeric: true
+		});
+	});	
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+		$("#panel").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	
+	 
+});
+</script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<section class="page contactPage">
+	<!-- Start : Header -->
+	<header class="header">
+    	<!-- Start : Header Top Panel -->
+    	<div class="headerTop">
+        	<div class="headerTopInn">
+            	<h1><a href="index.html" title="Resume Design Suite">Resume Design Suite</a></h1>
+                <nav class="headerTopRight">
+                	<ul class="topMenu">
+                    	<li class="slide"><a href="#" title="Login" class="btn-slide">Login</a></li>
+                    	<li class="last"><a href="contact.html" title="Help">Help</a></li>
+                    </ul>
+                    <div id="panel">
+                    	<h2>Login</h2>
+                        <input type="text" value="User Name" onfocus="if(this.value=='User Name'){this.value=''};" onblur="if(this.value==''){this.value='User Name'};" class="emailBox">
+                        <input type="text" value="Password" onfocus="if(this.value=='Password'){this.value=''};" onblur="if(this.value==''){this.value='Password'};">
+                        <input type="button" value="Submit" class="loginBtn">
+                    </div>
+                	<ul class="mainMenu">
+                    	<li><a href="about.html" title="ABOUT">ABOUT</a></li>
+                    	<li><a href="template.html" title="TEMPLATES">TEMPLATES</a></li>
+                    	<li class="last"><a href="contact.html" title="CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <br class="spacer">
+            </div>
+        </div>
+        <!-- Start : Header Mid Panel -->
+        <div class="headerMid">
+        	<div class="headerMidInn">
+        		<h2 class="contactHeading">HARK, IS THAT DISTRESS WE SENSE?<br>EMAIL US. WE’RE HERE TO HELP! </h2>
+            </div>
+        </div>
+        <!-- Start : Header Bottom Panel -->
+        <div class="headerBottom">
+        	<div class="headerBottomInn">
+            	<a href="#" title="NAH, IT’S COOL. I GOT THIS." class="getstarted">NAH, IT’S COOL. I GOT THIS.</a>
+            </div>
+        </div>
+    </header>
+	<!-- End : Header -->
+    <!-- Start : Content Panel -->
+    <section class="contentPan">
+    	<article class="contentInn">
+        	<div class="contactContent">
+            	<article class="contactLeft">
+                	<h2>SEND US A MESSAGE</h2>
+                	<form action="#" method="post">
+                	<input type="text" value="Your Name">
+                	<input type="text" value="Your Email Address">
+                	<input type="text" value="Subject">
+                    <textarea name="">Message</textarea>
+                    <input type="submit" value="SUBMIT" class="submit">
+                    </form>
+                </article>
+                <article class="contactRight">
+                	<h2>FAQS</h2>
+                    <p><span>Can I have my resume custom designed?</span>Of course! Send us an email, and one of our talented designers will contact you. We look forward to hearing from you.</p>
+                    <p><span>Does my information stay private?</span>Always! We don’t share your information with anyone.</p>
+                    <p><span>Can I be a part of the team?</span>Send us your information. We enjoy hearing from talented designers.</p>
+                </article>
+                <br class="spacer">
+            </div>
+            <br class="spacer">
+        </article>
+    </section>
+    <!-- End : Content Panel -->
+    <!-- Start : Footer -->
+    <footer class="footer">
+    	<div class="footerInn">
+        	<div class="footerLeft">
+            	<h2>Newsletter Sign-Up<span></span></h2>
+                <form action="#" method="post">
+                	<input type="text" value="Your Email Address" onfocus="if(this.value=='Your Email Address'){this.value=''};" onblur="if(this.value==''){this.value='Your Email Address'};" class="emailBox">
+                    <input type="submit" value="SUBMIT" class="btn">
+                </form>
+            </div>
+            <div class="socialBox">
+            	<a href="http://www.facebook.com/pages/Resume-Design-Suite/159279457513093" title="Facebook"  target="_blank" class="facebook">Facebook</a>
+            	<a href="https://twitter.com/ResumeDesigners" title="Twitter"  target="_blank" class="twitter">Twitter</a>
+            </div>
+            <br class="spacer">
+            <p>&copy; Resume Design Suite. All Rights Reserved.</p>
+            <br class="spacer">
+        </div>
+    </footer>
+    <!-- Start : Footer -->
+</section>
+</body>
+</html>

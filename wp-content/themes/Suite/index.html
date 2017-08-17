@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Resume Design Suite</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#slider").easySlider({
+			auto: true, 
+			continuous: true,
+			numeric: true
+		});
+	});	
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+		$("#panel").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	
+	 
+});
+</script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<section class="page">
+	<!-- Start : Header -->
+	<header class="header">
+    	<!-- Start : Header Top Panel -->
+    	<div class="headerTop">
+        	<div class="headerTopInn">
+            	<h1><a href="index.html" title="Resume Design Suite">Resume Design Suite</a></h1>
+                <nav class="headerTopRight">
+                	<ul class="topMenu">
+                    	<li class="slide"><a href="#" title="Login" class="btn-slide">Login</a></li>
+                    	<li class="last"><a href="contact.html" title="Help">Help</a></li>
+                    </ul>
+                    <div id="panel">
+                    	<h2>Login</h2>
+                        <input type="text" value="User Name" onfocus="if(this.value=='User Name'){this.value=''};" onblur="if(this.value==''){this.value='User Name'};" class="emailBox">
+                        <input type="text" value="Password" onfocus="if(this.value=='Password'){this.value=''};" onblur="if(this.value==''){this.value='Password'};">
+                        <input type="button" value="Submit" class="loginBtn">
+                    </div>
+                	<ul class="mainMenu">
+                    	<li><a href="about.html" title="ABOUT">ABOUT</a></li>
+                    	<li><a href="template.html" title="TEMPLATES">TEMPLATES</a></li>
+                    	<li class="last"><a href="contact.html" title="CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <br class="spacer">
+            </div>
+        </div>
+        <!-- Start : Header Mid Panel -->
+        <div class="headerMid">
+        	<div class="headerMidInn">
+        	<div id="slider">
+                <ul>				
+                    <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="images/ban-img-1.png" class="bannerImg" alt=""></div></li>
+                    <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="images/ban-img-1.png" class="bannerImg" alt=""></div></li>
+                </ul>
+			</div>
+            </div>
+        </div>
+        <!-- Start : Header Bottom Panel -->
+        <div class="headerBottom">
+        	<div class="headerBottomInn">
+            	<a href="template.html" title="GET STARTED!" class="getstarted">GET STARTED!</a>
+            </div>
+        </div>
+    </header>
+	<!-- End : Header -->
+    <!-- Start : Content Panel -->
+    <section class="contentPan">
+    	<article class="contentInn">
+        	<hgroup>
+            	<h2>SELECT A RESUME TEMPLATE</h2>
+                <h5>Choose one of our resume templates below, and off you go!</h5>
+            </hgroup>
+            <div class="boxImg">
+            	<strong><a href="#" title=""></a></strong>
+                <span>Resume Sample Title</span>
+            </div>
+            <div class="boxImg">
+            	<strong><a href="#" title=""></a></strong>
+                <span>Resume Sample Title</span>
+            </div>
+            <div class="boxImg">
+            	<strong><a href="#" title=""></a></strong>
+                <span>Resume Sample Title</span>
+            </div>
+            <div class="boxImg boxLast">
+            	<strong><a href="#" title=""></a></strong>
+                <span>Resume Sample Title</span>
+            </div>
+            <br class="spacer">
+        </article>
+    </section>
+    <!-- End : Content Panel -->
+    <!-- Start : Bottom Panel -->
+    <section class="bottomPan">
+    	<div class="bottomInn">
+        	<article class="bottomLeft">
+            	<h2>HOW DOES THIS WORK?</h2>
+                <h3>Step 1. Select a resume template.</h3>
+                <p>Take a look around. See what you like.</p>
+                <h3>Step 2. Add your information.</h3>
+                <p>Add the info that you’ll want to appear on your resume.<br>Don’t worry, we’ll walk you through it</p>
+                <h3>Step 3. Export it, of course.</h3>
+                <p>Export your resume as a Word file or PDF doc. Create an account if<br>you’d like to come back and edit your resume template later. It’s really<br>that easy. We pinky swear.</p>
+                
+            </article>            
+        	<article class="bottomRight">
+            	<h3>Step 4. Apply!</h3>
+                <p>Voila! Now you can email your designed template to potential employers, or print it out and personally deliver it to them.  These templates work for college applications too. No matter how you use your new resume, they’ll be impressed with your good taste. Go get’em tiger!</p>
+                <h2>BONUS ROUND <a href="template.html" title=""></a></h2>
+                <p>Don’t want to use our system but just love our templates? No problem! Just pick the one you like, and download it in Word format. Then you can keep it forever. </p>
+            </article>
+            <br class="spacer">
+        </div>
+    </section>
+    <!-- Start : Bottom Panel -->
+    <!-- Start : Footer -->
+    <footer class="footer">
+    	<div class="footerInn">
+        	<div class="footerLeft">
+            	<h2>Newsletter Sign-Up<span></span></h2>
+                <form action="#" method="post">
+                	<input type="text" value="Your Email Address" onfocus="if(this.value=='Your Email Address'){this.value=''};" onblur="if(this.value==''){this.value='Your Email Address'};" class="emailBox">
+                    <input type="submit" value="SUBMIT" class="btn">
+                </form>
+            </div>
+            <div class="socialBox">
+            	<a href="http://www.facebook.com/pages/Resume-Design-Suite/159279457513093" title="Facebook"  target="_blank" class="facebook">Facebook</a>
+            	<a href="https://twitter.com/ResumeDesigners" title="Twitter"  target="_blank" class="twitter">Twitter</a>
+            </div>
+            <br class="spacer">
+            <p>&copy; Resume Design Suite. All Rights Reserved.</p>
+            <br class="spacer">
+        </div>
+    </footer>
+    <!-- Start : Footer -->
+</section>
+</body>
+</html>
