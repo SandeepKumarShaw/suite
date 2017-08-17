@@ -11,7 +11,17 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php if( is_front_page()){?>
 <section class="page">
+<?php }elseif(is_page('about')){?>
+<section class="page aboutPage">
+<?php }elseif(is_page('contact')){?>
+<section class="page contactPage">
+<?php }elseif(is_page('templates')){?>
+<section class="page templatePage">
+<?php }else{?>
+<section class="page aboutPage">
+<?php } ?>
 	<!-- Start : Header -->
 	<header class="header">
     	<!-- Start : Header Top Panel -->
@@ -47,8 +57,11 @@
             <?php }elseif(is_page('about')){?>
                 <h2 class="aboutHeading">THIS IS THE PART WHERE<br>WE TELL YOU A LITTLE BIT ABOUT US.</h2>
             <?php }elseif(is_page('contact')){?>
+                <h2 class="contactHeading">HARK, IS THAT DISTRESS WE SENSE?<br>EMAIL US. WE’RE HERE TO HELP! </h2>
             <?php }elseif(is_page('templates')){?>
+                <h2 class="templateHeading">WE BELIEVE IN YOU.<br>ready...set...design!</h2>
             <?php }else{?>
+                <h2 class="aboutHeading">THIS IS THE PART WHERE<br>WE TELL YOU A LITTLE BIT ABOUT US.</h2>
             <?php } ?>
 
             </div>
