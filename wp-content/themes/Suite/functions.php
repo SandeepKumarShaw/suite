@@ -1,4 +1,5 @@
 <?php
+require get_template_directory() . '/classes/Suite_Main.php';
 
 require get_template_directory() . '/classes/class-tgm-plugin-activation.php';
 

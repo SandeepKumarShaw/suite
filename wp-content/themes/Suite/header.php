@@ -49,17 +49,21 @@
         	<div class="headerMidInn">
             <?php if( is_front_page()){?>
             	<div id="slider">
-                    <ul>				
-                        <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="<?php echo get_template_directory_uri(); ?>/images/ban-img-1.png" class="bannerImg" alt=""></div></li>
-                        <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="<?php echo get_template_directory_uri(); ?>/images/ban-img-1.png" class="bannerImg" alt=""></div></li>
+                    <ul>
+                    <?php
+                       $sliderrepeate='slider';
+                      Suite_Print::sliderpost($sliderrepeate);
+                    ?>				
+                        <!-- <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="<?php //echo get_template_directory_uri(); ?>/images/ban-img-1.png" class="bannerImg" alt=""></div></li>
+                        <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="<?php //echo get_template_directory_uri(); ?>/images/ban-img-1.png" class="bannerImg" alt=""></div></li> -->
                     </ul>
     			</div>
             <?php }elseif(is_page('about')){?>
-                <h2 class="aboutHeading">THIS IS THE PART WHERE<br>WE TELL YOU A LITTLE BIT ABOUT US.</h2>
+                <h2 class="aboutHeading"><?php echo get_field('banner_text');?></h2>
             <?php }elseif(is_page('contact')){?>
-                <h2 class="contactHeading">HARK, IS THAT DISTRESS WE SENSE?<br>EMAIL US. WE’RE HERE TO HELP! </h2>
+                <h2 class="contactHeading"><?php echo get_field('banner_text');?> </h2>
             <?php }elseif(is_page('templates')){?>
-                <h2 class="templateHeading">WE BELIEVE IN YOU.<br>ready...set...design!</h2>
+                <h2 class="templateHeading"><?php echo get_field('banner_text');?></h2>
             <?php }else{?>
                 <h2 class="aboutHeading">THIS IS THE PART WHERE<br>WE TELL YOU A LITTLE BIT ABOUT US.</h2>
             <?php } ?>
@@ -69,7 +73,7 @@
         <!-- Start : Header Bottom Panel -->
         <div class="headerBottom">
         	<div class="headerBottomInn">
-            	<a href="template.html" title="GET STARTED!" class="getstarted">GET STARTED!</a>
+            	<a href="<?php echo site_url().'/templates'; ?>" title="GET STARTED!" class="getstarted">GET STARTED!</a>
             </div>
         </div>
     </header>
