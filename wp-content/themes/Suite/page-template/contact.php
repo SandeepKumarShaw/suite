@@ -7,6 +7,7 @@ get_header(); ?>
     	<article class="contentInn">
         	<div class="contactContent">
             	<article class="contactLeft">
+                    <h2>SEND US A MESSAGE</h2>
                 	<?php echo do_shortcode(get_field('send_us_a_message')); ?>
                 </article>
                 <article class="contactRight">
