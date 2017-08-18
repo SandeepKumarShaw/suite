@@ -50,12 +50,11 @@
             <?php if( is_front_page()){?>
             	<div id="slider">
                     <ul>
-                    <?php
-                       $sliderrepeate='slider';
-                      Suite_Print::sliderpost($sliderrepeate);
+                    <?php    
+                     $data ="";
+                     echo Suite_Print::sliderpost($data);
                     ?>				
-                        <!-- <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="<?php //echo get_template_directory_uri(); ?>/images/ban-img-1.png" class="bannerImg" alt=""></div></li>
-                        <li><div><h2>Create a resume that looks like you hired a graphic designer to do it.</h2><img src="<?php //echo get_template_directory_uri(); ?>/images/ban-img-1.png" class="bannerImg" alt=""></div></li> -->
+                       
                     </ul>
     			</div>
             <?php }elseif(is_page('about')){?>

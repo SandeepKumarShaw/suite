@@ -1,4 +1,15 @@
 <?php
+/**
+ * Functions file
+ *
+ * For some the main file in a theme. Here we display meta informaion and the
+ * header information like menus .
+ *
+ * Sets up the theme and provides some helper functions. Some helper functions
+ * are used in the theme as custom template tags. Others are attached to action and
+ * filter hooks in WordPress to change core functionality.
+ * 
+ */
 require get_template_directory() . '/classes/Suite_Main.php';
 
 require get_template_directory() . '/classes/class-tgm-plugin-activation.php';
