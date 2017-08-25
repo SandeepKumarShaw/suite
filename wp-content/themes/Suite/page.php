@@ -12,6 +12,9 @@
  */
 
 get_header(); ?>
+<section class="contentPan">
+  <article class="contentInn">
+          <div class="">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -34,5 +37,7 @@ get_header(); ?>
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
-
+	</div>
+	</article>
+</section>
 <?php get_footer(); ?>
